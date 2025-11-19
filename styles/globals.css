@@ -231,8 +231,12 @@ html {
   --color-3: #4DA9B0;
   --color-4: #1A1D1F;
 }
-/* =========== Allow transforms specifically for the hero carousel =========== */
-/* Place this AFTER any global transform rules (if any) */
+.hero__carousel,
+.hero__carousel .carousel-viewport,
+.hero__carousel .carousel-track,
+.hero__carousel .carousel-track * {
+  transform: unset !important;
+}
 
 .hero__carousel .carousel-viewport {
   width: 100%;
@@ -250,7 +254,7 @@ html {
 
 .hero__carousel .carousel-item {
   flex-shrink: 0;
-  min-width: 200px; /* adjust if needed */
+  min-width: 200px;
   padding: 1rem 1.5rem;
   background: rgba(255,255,255,0.08);
   backdrop-filter: blur(6px);

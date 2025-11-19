@@ -5,10 +5,10 @@ import FloatingLines from './FloatingLines';
 import HeroCarousel from './HeroCarousel';
 
 const services = [
-  { title: 'SEO Optimization', color: '#2D7176' },
-  { title: 'Content Marketing', color: '#4DA9B0' },
-  { title: 'Social Media', color: '#3A3D3F' },
-  { title: 'SEM & PPC', color: '#2D7176' },
+  "SEO Optimization",
+  "Content Marketing",
+  "Social Media",
+  "SEM & PPC"
 ];
 
 export function Hero() {
